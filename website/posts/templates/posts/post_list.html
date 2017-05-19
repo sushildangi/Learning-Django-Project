@@ -27,7 +27,7 @@
                     {% else %}
                     <p>Author : {{ obj.user }}</p>
                     {% endif %}
-                    <p><br>{{ obj.content | linebreaks | truncatechars:120 }}.</p>
+                    <p class="content-markdown">{{ obj.content }}.</p>
                     <p><a href="{% url 'posts:detail' slug=obj.slug %}" class="btn btn-primary" role="button">View</a>
                     </p>
                 </div>
